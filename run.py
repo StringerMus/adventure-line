@@ -35,9 +35,31 @@ def select_story():
 def the_castle():
     loading = "\nYou have selected 'The Castle'"
     print(loading)
-
-    castle_set = "\nThe kingdom of Pythonland needs your help! The evil Lord Evilton has stolen the King's gold, and we need your help to get it back!"
+    """
+    Each story will start by setting the scene
+    Followed by a situation where the user needs to make a choice
+    Options will be provided to the player
+    The player will need to enter a valid key to select a choice and progress the story.
+    """
+    #change setting
+    castle_set = "\nA Princess has been stolen away by a fire breathing Dragon in its lair as punishment to the King for not paying his yearly tribute.\n\nThe King has promised all the gold the dragon holds to the hero who rescues the Princess and brings her back to him.\n\n You have decided to embark on this bold quest to rescue the Princess and gain riches"
     print(castle_set)
+
+    while True:
+        sit1 = "\nYou arrive at the Dragons Lair in a shining metal armour, with a sword and shield in your hands. The lair is a big castle inside a mountain, you see the entrance guarded by 2 skeletons with swords\n"
+        print(sit1)
+        choice1 = input("\nDo you\n\na.Charge and fight the skeletons or\nb.Run away\n\nEnter here:")
+        if choice1 == "a":
+            a = "You charge at the skeleton guards and they crumble at swing of your mighty sword"
+            print(a)
+            break
+        elif choice1 == "b":
+            b = "You run away cowardly back home with the Princess and gold still sitting in the castle. Mission Failed."
+            print(b)
+            break
+        else:
+            print("\nInvalid key. Please enter the (a or b) to make a choice")
+
 
 start_game()
 select_story()
