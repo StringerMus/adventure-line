@@ -33,7 +33,7 @@ def select_story():
             print("\nInvalid key. Please enter the (1/ 2 or 3) to select a story:")
 
 def replay():
-    input("\nWould you like to retry? (y/n):")
+    retry = input("\nWould you like to retry? (y/n): ")
     if retry == "y":
         the_castle()
     elif retry == "n":
@@ -51,13 +51,6 @@ def the_castle():
     castle_set = "\nA Princess has been stolen away by a fire breathing Dragon in its lair as punishment to the King for not paying his yearly tribute.\n\nThe King has promised all the gold the dragon holds to the hero who rescues the Princess and brings her back to him.\n\nYou have decided to embark on this bold quest to rescue the Princess and gain riches"
     print(castle_set)
 
-    def replay():
-        retry = "\nWould you like to retry? (y/n):"
-        if retry == "y":
-            the_castle(sit1)
-        elif retry == "n":
-            start_game()
-
     while True:
         #Situation 1
         sit1 = "\nYou arrive at the Dragons Lair in a shining metal armour, with a sword and shield in your hands. The lair is a big castle inside a mountain, you see the entrance guarded by 2 skeletons with swords\n"
@@ -65,11 +58,7 @@ def the_castle():
         choice1 = input("\nDo you\n\na.Charge and fight the skeletons or\nb.Run away\n\nEnter here: ")
         if choice1 == "b":
             print("\nYou run away, leaving behind the Princess and the gold to the Dragon. Mission Failed.\n")
-            retry = input("\nWould you like to retry? (y/n): ")
-            if retry == "y":
-                the_castle()
-            elif retry == "n":
-                start_game()
+            replay()
                 
         elif choice1 == "a":
             print("You charge at the skeleton guards and they crumble from the hits of your mighty sword.")
@@ -80,12 +69,9 @@ def the_castle():
             choice2 = input("\nDo you\n\na. Go up the tower or \nb. Go down into the dungeon\n\nEnter here: ")
             if choice2 == "b":
                 print("\nYou run down, into the darkness of the dungeon you suddenly find yourself falling into emptiness. Suddenly spikes pierce your body as you meet the bottom. You died.\n")
-                retry = input("\nWould you like to retry? (y/n): ")
-                if retry == "y":
-                    the_castle()
-                elif retry == "n":
-                    start_game()
+                replay()
 
+            #if 'aa' is typed - it goes back to sit1    
             elif choice2 == "a":
                 print("You go up the winding stairs of the tower and found yourself in front 3 closed doors.\n")
 
@@ -93,18 +79,11 @@ def the_castle():
                 choice3 = input("\nDo you go through:\n\na. The first door\nb. The middle door\nc. The last door\n\nEnter here: ")
                 if choice3 == "a":
                     print("\nYou open the door, walk in and fall into a pit of lava. You died.\n")
-                    retry = input("\nWould you like to retry? (y/n): ")
-                    if retry == "y":
-                        the_castle()
-                    elif retry == "n":
-                        start_game()
+                    replay()
 
                 if choice3 == "b":
                     print("\nThe door is locked. You bash it down with your shoulders repeatedly, the door gives way and breaks open. The momentum of your push carries you passed the doorway and you are now falling down outside the tower - you fall to your death. You died.\n")
-                    if retry == "y":
-                        the_castle()
-                    elif retry == "n":
-                        start_game()
+                    replay()
 
                 if choice3 == "c":
                     print("\nYou kick the door open. The Princess is sitting terrified on her bed, you tell you have come to rescue her.\n")
