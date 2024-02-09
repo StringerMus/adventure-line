@@ -1,7 +1,6 @@
-Introduction = "Welcome to Adventure Line!\n\nYour are in control of what happens in these stories.\n\nThe choices you make will affect the plot but BEWARE, there are dangers and you must decide which choice to make.\nThe wrong decision could end in disaster - or even DEATH.\n"
-print(Introduction)
-
 def start_game():
+    Introduction = "Welcome to Adventure Line!\n\nYour are in control of what happens in these stories.\n\nThe choices you make will affect the plot but BEWARE, there are dangers and you must decide which choice to make.\nThe wrong decision could end in disaster - or even DEATH.\n"
+    print(Introduction)
     """
     Get command from user to start game from user.
     User to select the story they want to play.
@@ -59,16 +58,28 @@ def the_castle():
         if choice == "a":
             print("You charge at the skeleton guards and they crumble from the hits of your mighty sword.")
             break
-        if choice == "b":
+            sit 2
+        elif choice == "b":
             print("\nYou run away, leaving behind the Princess and the gold to the Dragon. Mission Failed.\n")
             retry = input("\nWould you like to retry? (y/n):")
-            break
             if retry == "y":
                 the_castle()
             elif retry == "n":
                 start_game()
-        #doesnt work - else:
+        #else:
             #print("\nInvalid key. Please enter the (a or b) to make a choice:")
+        
+        sit2 = "\nYou enter the castle and see a set of stairs going up to a tower and another set of stairs going down into the dungeon:\n"
+        print(sit2)
+        choice = input("\nDo you go up the tower or down into the dungeon\n\nEnter here:")
+        if choice == "a":
+            print("You go up the winding stairs of the tower and found yourself in front 3 closed doors.")
+            break
+        elif choice == "b":
+            print("\nYou run down, into the darkness of the dungeon you suddenly find yourself falling into emptiness. Suddenly spikes pierce your body as you meet the bottom. You died.\n")
+            return retry
+        else:
+            print("\nInvalid key. Please enter the (a or b) to make a choice:")
 
 
 start_game()
