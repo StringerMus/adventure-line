@@ -64,7 +64,7 @@ def the_castle():
             print("You charge at the skeleton guards and they crumble from the hits of your mighty sword.")
             
             #Situation 2
-            sit2 = "\nYou enter the castle and see a set of stairs going up to a tower and another set of stairs going down into the dungeon:\n"
+            sit2 = "\nYou enter the castle and see a set of stairs going up to a tower and another set of stairs going down into the dungeon.\n"
             print(sit2)
             choice2 = input("\nDo you\n\na. Go up the tower or \nb. Go down into the dungeon\n\nEnter here: ")
             if choice2 == "b":
@@ -80,13 +80,26 @@ def the_castle():
                 if choice3 == "a":
                     print("\nYou open the door, walk in and fall into a pit of lava. You died.\n")
                     replay()
-
-                if choice3 == "b":
+                elif choice3 == "b":
                     print("\nThe door is locked. You bash it down with your shoulders repeatedly, the door gives way and breaks open. The momentum of your push carries you passed the doorway and you are now falling down outside the tower - you fall to your death. You died.\n")
                     replay()
-
-                if choice3 == "c":
+                elif choice3 == "c":
                     print("\nYou kick the door open. The Princess is sitting terrified on her bed, you tell you have come to rescue her.\n")
+                    
+                    #Situation4
+                    sit4 = "\nYou start looking for an exit but then you see a window and look into it\n\n Below the window is a great big sleeping dragon on bed of golden coins in a room full of treasure and underneath the window there are stairs descending into the room.\n"
+                    print(sit4)
+                    choice4 = input("\nDo you:\n\na. Go down the stairs to sneak down and take some of the treasure back with you.\nb. Take your sword out and jump on the dragon.\nc.Go back the way you came.\n")
+                    
+                    if choice4 == "a":
+                        print("\nYou vault over the window onto the stairs and start sneaking down...\nbut the clunking of your armour awakes the dragon and before you know it your are facing a very angry beast.\nThe Dragon opens it mouth and you are burnt to a cinder. You die.\n")
+                        replay()
+                    elif choice4 == "c":
+                        print("\nYou grab the Princess by the hand and lead her back with you down the stairs, you are suddenly met with an army of Skeleton Soldiers.\nYour futile attempt to fight them does nothing as the horde of Skeletons overwhelm you with their attack. You die.\n")
+                        replay()
+                    elif choice4 == "b":
+                        print("\nYou stand on edge of the window with your sword drawn. You leap into the air aiming to land on the Dragons head with both of your hands on the hilt of the sword.\nYou plunge the sword into the Dragon.\nYou keep the sword there, holding onto the hilt until the Dragon stops thrashing.\nYou have SLAIN the Dragon!\n")
+
                     break
 
         else:
