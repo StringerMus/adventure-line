@@ -39,6 +39,13 @@ def replay():
     elif retry == "n":
         start_game()
 
+def game_end():
+    end = input("\nCongratulations! You made it to the end of the story! We hope you are happy with the ending you have chosen.\n\nWould you like to play again(y) or go back to the main menu(n): ")
+    if end == "y":
+        the_castle()
+    elif end == "n":
+        start_game()
+
 def the_castle():
     loading = "\nYou have selected 'The Castle'"
     print(loading)
@@ -83,6 +90,7 @@ def the_castle():
                 elif choice3 == "b":
                     print("\nThe door is locked. You bash it down with your shoulders repeatedly, the door gives way and breaks open. The momentum of your push carries you passed the doorway and you are now falling down outside the tower - you fall to your death. You died.\n")
                     replay()
+
                 elif choice3 == "c":
                     print("\nYou kick the door open. The Princess is sitting terrified on her bed, you tell you have come to rescue her.\n")
                     
@@ -90,16 +98,25 @@ def the_castle():
                     sit4 = "\nYou start looking for an exit but then you see a window and look into it\n\n Below the window is a great big sleeping dragon on bed of golden coins in a room full of treasure and underneath the window there are stairs descending into the room.\n"
                     print(sit4)
                     choice4 = input("\nDo you:\n\na. Go down the stairs to sneak down and take some of the treasure back with you.\nb. Take your sword out and jump on the dragon.\nc.Go back the way you came.\n")
-                    
                     if choice4 == "a":
                         print("\nYou vault over the window onto the stairs and start sneaking down...\nbut the clunking of your armour awakes the dragon and before you know it your are facing a very angry beast.\nThe Dragon opens it mouth and you are burnt to a cinder. You die.\n")
                         replay()
                     elif choice4 == "c":
                         print("\nYou grab the Princess by the hand and lead her back with you down the stairs, you are suddenly met with an army of Skeleton Soldiers.\nYour futile attempt to fight them does nothing as the horde of Skeletons overwhelm you with their attack. You die.\n")
                         replay()
-                    elif choice4 == "b":
-                        print("\nYou stand on edge of the window with your sword drawn. You leap into the air aiming to land on the Dragons head with both of your hands on the hilt of the sword.\nYou plunge the sword into the Dragon.\nYou keep the sword there, holding onto the hilt until the Dragon stops thrashing.\nYou have SLAIN the Dragon!\n")
 
+                    elif choice4 == "b":
+                        print("\nYou stand on edge of the window with your sword drawn. You leap into the air with both hands on the hilt of the sword.\nYou plunge the sword right into the Dragon's head.\nYou keep the sword there, holding tight until the Dragon stops thrashing.\nYou have SLAIN the Dragon!\n")
+
+                        #Situation5
+                        sit5 = ("\nYou find yourself in a room full priceless treasure, a slain dragon and a princess\n")
+                        print(sit5)
+                        choice5 = input("\na.Leave The Castle with Princess\nb.Leave the Castle with the Princess but also fill bags treasure to take back with you as promised by the King.")
+                        if choice5 = "a":
+                            print("\nYou take the Princess back to the King - You become the Hero of the land for saving the Princess and slaying the Dragon to end its terror over the Kingdom.\nThe Princess falls in love with you for saving her and she marries you.\nEventually you become the Ruler over the Kingdom after the King passes to reign over the Land you once saved and they build a statue of you to honour your greatness.\n\nThe End.")
+                            game_end()
+                        elif choice5 = "b":
+                            print("\nYou take the Princess back to the King - Your name becomes famous for saving the Princess and slaying the Dragon to end its terror over the Kingdom.\nYou become fat and rich, indulging in the finer things the rest of your life\n\nThe End.\n")
                     break
 
         else:
