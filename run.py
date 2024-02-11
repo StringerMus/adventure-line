@@ -27,7 +27,7 @@ def select_story():
             game_2()
             break
         elif story == "3":
-            game_3()
+            the_nightshift()
             break
         else:
             print("\nInvalid key. Please enter the (1/ 2 or 3) to select a story:")
@@ -56,8 +56,8 @@ def game_end():
         start_game()
 
 def the_castle():
-    loading = "\nYou have selected 'The Castle'"
-    print(loading)
+    castle_select = "\nYou have selected 'The Castle'"
+    print(castle_select)
     """
     Each story will start by setting the scene
     Followed by a situation where the user needs to make a choice
@@ -118,7 +118,7 @@ def the_castle():
                         print("\nYou stand on edge of the window with your sword drawn. You leap into the air with both hands on the hilt of the sword.\nYou PLUNGE the sword right into the Dragon's skull!\nYou keep the sword there, holding tight until the Dragon stops thrashing.\nYou have SLAIN the Dragon!\n")
 
                         #Situation5
-                        sit5 = ("\nYou find yourself in a room full of priceless treasures, with a slain dragon and the rescued Princess.\n")
+                        sit5 = "\nYou find yourself in a room full of priceless treasures, with a slain dragon and the rescued Princess.\n"
                         print(sit5)
                         choice5 = input("\na.Leave The Castle with Princess.\nb.Leave the Castle with the Princess but also fill bags treasure to take back with you as promised by the King.\n\nEnter here: ")
                         if choice5 == "a":
@@ -131,6 +131,24 @@ def the_castle():
         else:
             print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
+#The Night-Shift Story
+def the_nightshift():
+    nightshift_select = "\nYou have selected 'The Night-Shift'"
+    print(nightshift_select)
+    """
+    Each story will start by setting the scene
+    Followed by a situation where the user needs to make a choice
+    Options will be provided to the player
+    The player will need to enter a valid key to select a choice and progress the story.
+    """
+    nightshift_set = "\nYou are a Night-Watchmen assigned as security of an abandonned hospital asylum,this is your last shift before your retirement. There is a constant cycle of new guards going in out of the job, it might that the darkness and lonelines gets the best of people. But you don’t mind the time to yourself and are not scared of the dark.\n\nA new guard has started their first shift tonight, you have a radio to communicate with each other. They are making their first round of the hospital while you are at the security booth.\n"
+    print(nightshift_set)
+
+    while True:
+        #Situation 1
+        sit1 = "A radio transmission comes in from the New Guard ‘….zzz….I...zz….I…', you can't make out what they are saying, there is too much static. Again a transmission comes in ‘…..hel….zzz….I need…….help…zzz…'. You heard 'help'.\nYou try to communicate back but you don't receive an answer."
+        print(sit)
+        choice1 = 
 
 start_game()
 select_story()
