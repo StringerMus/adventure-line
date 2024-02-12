@@ -145,7 +145,7 @@ def the_nightshift():
 
     while True:
         #Situation 1
-        sit1 = "\nA radio transmission comes in from the New Guard ‘….zzz….I...zz….I…', you can't make out what they are saying, there is too much static. Again a transmission comes in ‘…..hel….zzz….I need…….help…zzz…'. You heard 'help'.\nYou try to communicate back but you don't receive an answer.\n"
+        sit1 = "\nA radio transmission comes in from the New Guard ‘...zzz….I...zz...I..', you can't make out what they are saying, there is too much static. Again a transmission comes in ‘…..hel….zzz….I need…….help…zzz…'. You heard 'help'.\nYou try to communicate back but you don't receive an answer.\n"
         print(sit1)
         choice1 = input("\nWhat do you do?\n\na. Go and investigate to look for your partner or\nb. You are sure it’s nothing as it never is, you’re sure you must have heard wrong. You await for your partner’s return, they should return in an hour from their patrol.\n")
         if choice1 == "b":
@@ -168,14 +168,27 @@ def the_nightshift():
                 sit3 = "\nAfter your patner leaves to carry on with the patrol, another transmission comes in on the radio ‘help me’.\n"
                 print(sit3)
                 choice3 = input("\na.Reply back and investigate.\nb. Ignore it.\n")
-                if choice == "b":
+                if choice3 == "b":
                     print("\nYou ignore the transmission and go back to the booth. You did not investigate the mysterious transmissions and fail to identify if someone is in trouble.\n")
-                if choice == "a":
+                if choice3 == "a":
                     print("\nYou ask if they are in the hospital, ‘yes’ is the response, ‘in the basement…help me’. You ask where in the basement, ‘I don’t know’.\n")
 
                     #Situation4
-                    sit4 = "\n\n"
+                    sit4 = "\nYou advance through the basement level of the hospital which you have not explored before, inspecting every room as there might be someone in trouble. You can't find a living soul but in a lot of the rooms you find decrepit beds with restraints and other equipments unsual for a hospital.\nThen you start hearing whispers and slight trembles of the ground and wall around you.\n"
                     print(sit4)
+                    choice4 = input("\na. Run back to exit the basement level.\nb. Go further down through the basement level to get to the source of the whispers and trembles.\n")
+                    if choice4 == "a":
+                        print("\nYou dart back to the stairs that led you to the basement but after a while you realise the corridor is endless and cannot see the stairs in sight, running passed the same rooms multiple times.\nYou realise you have no choice but to advance deeper into the basement.\n")
+                        print("\n"sit5)
+                    elif choice == "b":
+                        #Situation5
+                        sit5 = "\nAs you head towards the end of the corridor, you locate the source of the whispers to the last door with the trembles get louder as you approach.\nYou hestitate to open the door but muster the courage and quickly turn the handle pushing the door open.\nThe whispers and trebles suddenly stops, there is silence. You scan the room, you can see what looks like someone strapped to a gurney but they are not moving.\n"
+                        print(sit5)
+                        choice5 = input("\nYou can only imagine this is the source of the noise. You approach the body and see it is actually a skeleton in tattered clothes, the skeleton was possibly once a patient at the hospital a long time ago.\n\na. Grab a weapon and smash the skull and bones to stop this evil. b. Call in you have found the forgotten deceased remains of a patient in the hospital.\n")
+                        if choice5 == "a":
+                            print("\n\n")
+                        elif choice == "b":
+                            print("\n\n")
 
         else:
             print("\nInvalid key. Please enter the a valid option to make a choice: ")
