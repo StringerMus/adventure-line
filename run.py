@@ -126,8 +126,7 @@ def the_castle():
                             game_end()
                         elif choice5 == "b":
                             print("\nYou take the Princess back to the King - Your name becomes famous for saving the Princess and slaying the Dragon to end its terror over the Kingdom.\nYou become fat and rich, indulging in the finer things for the rest of your life.\n\nThe End.\n")
-                    break
-
+                            game_end()
         else:
             print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
@@ -146,9 +145,40 @@ def the_nightshift():
 
     while True:
         #Situation 1
-        sit1 = "A radio transmission comes in from the New Guard ‘….zzz….I...zz….I…', you can't make out what they are saying, there is too much static. Again a transmission comes in ‘…..hel….zzz….I need…….help…zzz…'. You heard 'help'.\nYou try to communicate back but you don't receive an answer."
-        print(sit)
-        choice1 = 
+        sit1 = "\nA radio transmission comes in from the New Guard ‘….zzz….I...zz….I…', you can't make out what they are saying, there is too much static. Again a transmission comes in ‘…..hel….zzz….I need…….help…zzz…'. You heard 'help'.\nYou try to communicate back but you don't receive an answer.\n"
+        print(sit1)
+        choice1 = input("\nWhat do you do?\n\na. Go and investigate to look for your partner or\nb. You are sure it’s nothing as it never is, you’re sure you must have heard wrong. You await for your partner’s return, they should return in an hour from their patrol.\n")
+        if choice1 == "b":
+            print("\nYou wait for your patner to return, but the New Guard does not appear after an hour. You go to investifate but they are now missing. Failed, you did not help your partner.\n")
+        elif choice1 == "a":
+            print("\nInto the darkness you go with your flashlight and your radio communicator along the usual patrol route in the hopes of stumbling across your partner.\n")
+
+            #Situation2
+            sit2 = "\nYou find your partner’s radio by basement level stairs which is not part of the patrol route, you look around but there is no sight of them in the darkness.\n"
+            print(sit2)
+            choice2 = input("\na. Go down the basement.\nb. Run away.\nc. Carry on along the path.\n")
+            if choice2 == "b":
+                print("\n\n")
+            elif choice2 == "c":
+                print("\n\n")
+            elif choice2 == "a":
+                print("\nYou go down the basement and find your partner walking towards your direction. They explain they heard a noise down here and went to investigate but found nothing and they must’ve dropped the radio on their way. Your partner denies making a call and says it must’ve been interference or someone playing tricks.\n")
+
+                #Situation3
+                sit3 = "\nAfter your patner leaves to carry on with the patrol, another transmission comes in on the radio ‘help me’.\n"
+                print(sit3)
+                choice3 = input("\na.Reply back and investigate.\nb. Ignore it.\n")
+                if choice == "b":
+                    print("\nYou ignore the transmission and go back to the booth. You did not investigate the mysterious transmissions and fail to identify if someone is in trouble.\n")
+                if choice == "a":
+                    print("\nYou ask if they are in the hospital, ‘yes’ is the response, ‘in the basement…help me’. You ask where in the basement, ‘I don’t know’.\n")
+
+                    #Situation4
+                    sit4 = "\n\n"
+                    print(sit4)
+
+        else:
+            print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
 start_game()
 select_story()
