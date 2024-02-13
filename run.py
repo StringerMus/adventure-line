@@ -68,10 +68,10 @@ def the_castle():
     The player will need to enter a valid key to select a choice and progress the story.
     """
     print("\nA Princess has been stolen away by a fire breathing Dragon, taking her back to its lair as punishment to the King for not paying his yearly tribute.")
-    print("\nThe King has promised all the treasure and gold the Dragon holds to the hero who rescues the Princess and brings her back to him.\n")
-    print("You have decided to embark on this daring quest to rescue the Princess and gain riches.\n")
+    print("\nThe King has promised all the treasure and gold the Dragon holds to the hero who rescues the Princess and brings her back to him.")
+    print("\nYou have decided to embark on this daring quest to rescue the Princess and gain riches.\n")
 
-    #Situation 2
+    #Situation 2 - need to turn these sits into loops
     def sit2():
         print("\nYou enter the castle and see a set of stairs going up to a tower and another set of stairs going down into a dungeon.\n")
         choice2 = input("\nDo you\n\na. Go up the tower or \nb. Go down into the dungeon\n\nEnter here: ")
@@ -81,8 +81,6 @@ def the_castle():
         elif choice2 == "a":
             print("\nYou go up the winding stairs of the tower and found yourself in front 3 closed doors.\n")
             sit3()
-        else:
-            print("\nInvalid key. Please enter the a valid option to make a choice: ")
     
     #Situation 3
     def sit3():
@@ -96,8 +94,6 @@ def the_castle():
         elif choice3 == "c":
             print("\nYou kick the door open. The Princess is sitting terrified on her bed, you tell you have come to rescue her.\n")
             sit4()
-        else:
-            print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
     #Situation 4
     def sit4():
@@ -112,8 +108,6 @@ def the_castle():
         elif choice4 == "b":
             print("\nYou stand on edge of the window with your sword drawn. You leap into the air with both hands on the hilt of the sword.\nYou PLUNGE the sword right into the Dragon's skull!\nYou keep the sword there, holding tight until the Dragon stops thrashing.\nYou have SLAIN the Dragon!\n")
             sit5()
-        else:
-            print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
     #Situation5
     def sit5():
@@ -125,8 +119,6 @@ def the_castle():
         elif choice5 == "b":
             print("\nYou take the Princess back to the King - Your name becomes famous for saving the Princess and slaying the Dragon to end its terror over the Kingdom.\nYou become fat and rich, indulging in the finer things for the rest of your life.\n\nThe End.\n")
             game_end()
-        else:
-            print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
     #Game starts here
     while True:
@@ -137,11 +129,14 @@ def the_castle():
         if choice1 == "b":
             print("\nYou run away, leaving behind the Princess and the gold to the Dragon. Mission Failed.\n")
             replay()
+            break
         elif choice1 == "a":
             print("\nYou charge at the skeleton guards, swinging your sword. They crumble from the slashes of your mighty sword.\n")
             sit2()
+            break
         else:
             print("\nInvalid key. Please enter the a valid option to make a choice: ")
+            
 
 start_game()
 select_story()
