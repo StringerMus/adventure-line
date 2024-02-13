@@ -81,6 +81,8 @@ def the_castle():
         elif choice2 == "a":
             print("\nYou go up the winding stairs of the tower and found yourself in front 3 closed doors.\n")
             sit3()
+        else:
+            print("\nInvalid key. Please enter the a valid option to make a choice: ")
     
     #Situation 3
     def sit3():
@@ -94,6 +96,8 @@ def the_castle():
         elif choice3 == "c":
             print("\nYou kick the door open. The Princess is sitting terrified on her bed, you tell you have come to rescue her.\n")
             sit4()
+        else:
+            print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
     #Situation 4
     def sit4():
@@ -108,6 +112,8 @@ def the_castle():
         elif choice4 == "b":
             print("\nYou stand on edge of the window with your sword drawn. You leap into the air with both hands on the hilt of the sword.\nYou PLUNGE the sword right into the Dragon's skull!\nYou keep the sword there, holding tight until the Dragon stops thrashing.\nYou have SLAIN the Dragon!\n")
             sit5()
+        else:
+            print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
     #Situation5
     def sit5():
@@ -119,6 +125,8 @@ def the_castle():
         elif choice5 == "b":
             print("\nYou take the Princess back to the King - Your name becomes famous for saving the Princess and slaying the Dragon to end its terror over the Kingdom.\nYou become fat and rich, indulging in the finer things for the rest of your life.\n\nThe End.\n")
             game_end()
+        else:
+            print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
     #Game starts here
     while True:
@@ -132,7 +140,6 @@ def the_castle():
         elif choice1 == "a":
             print("\nYou charge at the skeleton guards, swinging your sword. They crumble from the slashes of your mighty sword.\n")
             sit2()
-
         else:
             print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
