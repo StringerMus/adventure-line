@@ -178,8 +178,8 @@ def the_nightshift():
                     print(sit4)
                     choice4 = input("\na. Run back to exit the basement level.\nb. Go further down through the basement level to get to the source of the whispers and trembles.\n")
                     if choice4 == "a":
-                        print("\nYou dart back to the stairs that led you to the basement but after a while you realise the corridor is endless and cannot see the stairs in sight, running passed the same rooms multiple times.\nYou realise you have no choice but to advance deeper into the basement.\n")
-                        print("\n"sit5)
+                        print("\nYou dart back to the stairs that led you to the basement but after a while you realise the corridor is endless and cannot see the stairs in sight, running passed the same rooms multiple times.\nYou realise you have no choice but to advance deeper into the basement.\n\n")
+                        print(sit5)
                     elif choice == "b":
                         #Situation5
                         sit5 = "\nAs you head towards the end of the corridor, you locate the source of the whispers to the last door with the trembles get louder as you approach.\nYou hestitate to open the door but muster the courage and quickly turn the handle pushing the door open.\nThe whispers and trebles suddenly stops, there is silence. You scan the room, you can see what looks like someone strapped to a gurney but they are not moving.\n"
