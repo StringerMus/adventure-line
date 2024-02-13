@@ -189,6 +189,7 @@ def the_nightshift():
                             print("\n\n")
                         elif choice == "b":
                             print("\n\n")
+                            break
 
         else:
             print("\nInvalid key. Please enter the a valid option to make a choice: ")
