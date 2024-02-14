@@ -74,6 +74,10 @@ def the_castle():
     print("\nThe King has promised all the treasure and gold the Dragon holds to the hero who rescues the Princess and brings her back to him.")
     print("\nYou have decided to embark on this daring quest to rescue the Princess and gain riches.\n")
 
+    def display():
+        print("Lives: {lives}")
+        print("Points: {points}")
+
     #Situation 2 - need to turn these sits into loops
     def sit2():
         while True:
@@ -157,15 +161,18 @@ def the_castle():
 
     #Game starts here
     while True:
+        display()
         #Situation 1
         print("\nYou arrive at the Dragon’s Lair in a shining metal armour, with a sword and shield in your hands.")
         print("The lair is a big castle inside a mountain, you see the entrance guarded by 2 skeletons with swords.\n")
         choice1 = input("\nDo you\n\na.Charge and fight the skeletons or\nb.Run away\n\nEnter here: ")
         if choice1 == "b":
+            points -= 50
             print("\nYou run away, leaving behind the Princess and the gold to the Dragon. Mission Failed.\n")
             replay()
             break
         elif choice1 == "a":
+            points += 100
             print("\nYou charge at the skeleton guards, swinging your sword. They crumble from the slashes of your mighty sword.\n")
             sit2()
             break
