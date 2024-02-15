@@ -46,11 +46,14 @@ def game_over():
     This function will appear whenever a players lives reaches 0
     To give opportunity for player to try again and allow them to go back to the main menu.
     """
-    retry = input("\nWould you like to retry? (y/n): ")
-    if retry == "y":
-        the_castle()
-    elif retry == "n":
-        start_game()
+    while True:
+        retry = input("\nWould you like to retry? (y/n): ")
+        if retry == "y":
+            the_castle()
+        elif retry == "n":
+            start_game()
+    else:
+        print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
 def game_end():
     """
@@ -58,12 +61,15 @@ def game_end():
     It congratulates the player and provides the option to either play the story again for the alternative ending
     or to go back to the main menu.
     """
-    print("\nCongratulations! You made it to the end of the story!\nWe hope you are happy with the ending you have chosen.\n")
-    end = input("\nWould you like to play again(y)\nor go back to the main menu(n)\n\nEnter here: ")
-    if end == "y":
-        the_castle()
-    elif end == "n":
-        start_game()
+    while True:
+        print("\nCongratulations! You made it to the end of the story!\nWe hope you are happy with the ending you have chosen.\n")
+        end = input("\nWould you like to play again(y)\nor go back to the main menu(n)\n\nEnter here: ")
+        if end == "y":
+            the_castle()
+        elif end == "n":
+            start_game()
+        else:
+            print("\nInvalid key. Please enter the a valid option to make a choice: ")       
 
 def the_castle():
     castle_select = "\nYou have selected 'The Castle'"
@@ -97,6 +103,8 @@ def the_castle():
             print("-1 life")
             print(f"You have {lives} remaining life")
             print("Try again")
+            if lives == 0:
+                game_over()
             continue
         elif choice1 == "a":
             points += 100
@@ -119,6 +127,8 @@ def the_castle():
             print("-1 life")
             print(f"You have {lives} remaining life")
             print("Try again")
+            if lives == 0:
+                game_over()
             continue
         elif choice2 == "a":
             print("\nYou go up the winding stairs of the tower and found yourself in front 3 closed doors.\n")
@@ -139,6 +149,8 @@ def the_castle():
             print("-1 life")
             print(f"You have {lives} remaining life")
             print("Try again")
+            if lives == 0:
+                game_over()
             continue
         elif choice3 == "b":
             lives -= 1
@@ -149,6 +161,8 @@ def the_castle():
             print("\n-1 life")
             print(f"You have {lives} remaining life")
             print("Try again")
+            if lives == 0:
+                game_over()
             continue
         elif choice3 == "c":
             points += 100
@@ -177,6 +191,8 @@ def the_castle():
             print("\n-1 life")
             print(f"You have {lives} remaining life")
             print("Try again\n\n")
+            if lives == 0:
+                game_over()
             continue
         elif choice4 == "c":
             lives -= 1
@@ -186,6 +202,9 @@ def the_castle():
             print("\n-1 life")
             print(f"You have {lives} remaining life")
             print("Try again\n\n")
+            if lives == 0:
+                game_over()
+            continue
         elif choice4 == "b":
             points += 100
             print("\nYou stand on edge of the window with your sword drawn. You leap into the air with both hands on the hilt of the sword.")
@@ -211,7 +230,7 @@ def the_castle():
             print("Eventually you become the Ruler over the Kingdom after the Kings reign as the new king of the Land that you once saved.")
             print("They build a statue of you to honour your greatness.\n\nThe End.\n")
             #score - change to just points
-            print(f"{points}")
+            print(f"Your score: {points}")
             game_end()
             break
         elif choice5 == "b":
@@ -219,7 +238,7 @@ def the_castle():
             print("\nYou take the Princess back to the King - Your name becomes famous for saving the Princess and slaying the Dragon to end its terror over the Kingdom.")
             print("You become fat and rich, indulging in the finer things for the rest of your life.\n\nThe End.\n")
             #score - change to just points
-            print(f"{points}")
+            print(f"Your score: {points}")
             game_end()
             break
         else:
