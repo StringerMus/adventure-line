@@ -1,9 +1,12 @@
+import random
+
 lives = 2
 points = 0
 
-def display():
-    print(f"\n\nLives: {lives}")
-    print(f"Points: {points}")
+dragon = "Baal" #['Jormungand', 'Samael', 'Falkor']
+king = "King Offa" #["King Oswald", "King Cyrus", "King Darius"]
+princess = "Eleni" #["Hera", "Medea", "Lucilla"]
+kingdom = ""
 
 def start_game():
     print("Welcome to Adventure Line!\n")
@@ -47,7 +50,8 @@ def game_over():
     To give option for players to either try again from the start of story or go back to the main menu.
     """
     while True:
-        retry = input("\nWould you like to retry? (y/n): ")
+        print("You have run out of lives")
+        retry = input("\nWould you like to retry the story? (y/n): \n\n")
         if retry == "y":
             the_castle()
         elif retry == "n":
@@ -84,26 +88,44 @@ def the_castle():
     lives = 2
     points = 0
 
-    print("\nA Princess has been stolen away by a fire breathing Dragon, taking her back to its lair as punishment to the King for not paying his yearly tribute.")
-    print("\nThe King has promised all the treasure and gold the Dragon holds to the hero who rescues the Princess and brings her back to him.")
-    print("\nYou have decided to embark on this daring quest to rescue the Princess and gain riches.\n")
+    print(f"\nIn the Kingdom of {kingdom} Princess {princess} has been stolen away by a fire breathing dragon called {dragon},")
+    print(f"taking her back to its lair as punishment to {king} for not paying his yearly tribute.")
+    print(f"{king} has promised all the treasure and gold the {dragon} holds to the hero who rescues Princess {princess} and brings her back to him.")
+    print(f"You have decided to embark on this daring quest to rescue the Princess {princess} and gain riches.\n")
+
+    #slow down the amount of information the user is receving on screen
+    while True:
+        lives_points = input("\nContinue? (y): ")
+        if lives_points == "y":
+            break
+        else:
+            print("\nInvalid key. Please enter (y) to continue: \n")
+    
+    #slow down the amount of information the user is receving on screen
+    while True:
+        print(f"\nYou have {lives} lives. If you fail twice, the game will be over.")
+        print("You will accumulate points depending on the decisions you make")
+        print("but will lose points if you make the incorrect decision.")
+        start_game = input("\nContinue? (y): ")
+        if start_game == "y":
+            break
+        else:
+            print("\nInvalid key. Please enter (y) to continue: \n")
 
     #Game starts here
     while True:
-        print(f"You have {lives} lives. If you fail twice, the game will be over\n")
-        print("You will accumilate points depending on the decisions you make")
-        print("but will lose points if you make the incorrect decision.")
         #Scene 1
-        print("\nYou arrive at the Dragon’s Lair in a shining metal armour, with a sword and shield in your hands.")
+        print("\nYou arrive at the dragon’s lair in a shining metal armour, with a sword and shield in your hands.")
         print("The lair is a big castle inside a mountain, you see the entrance guarded by 2 skeletons with swords.\n")
         choice1 = input("\nDo you\n\na.Charge and fight the skeletons or\nb.Run away\n\nEnter here: ")
         if choice1 == "b":
             points -= 50
             lives -= 1
-            print("\nYou run away, leaving behind the Princess and the gold to the Dragon. Mission Failed.\n")
-            print("-1 life")
+            print(f"\nYou run away, leaving behind Princess {princess} and the gold to the Dragon {dragon}. Mission Failed.\n")
+
+            print("\n-1 life")
             print(f"You have {lives} remaining life")
-            print("Try again")
+            print("\nTry again")
             if lives == 0:
                 game_over()
             continue
@@ -125,6 +147,7 @@ def the_castle():
             points -= 50
             print("\nYou run down, into the darkness of the dungeon...")
             print("You suddenly find yourself falling into a pit of emptiness and spikes pierce your body as you meet the bottom. You die.\n")
+
             print("-1 life")
             print(f"You have {lives} remaining life")
             print("Try again")
@@ -147,27 +170,31 @@ def the_castle():
             lives -= 1
             points -= 50
             print("\nYou open the door...and walk in falling into a pit of lava. You die.\n")
+
             print("-1 life")
             print(f"You have {lives} remaining life")
             print("Try again")
             if lives == 0:
                 game_over()
             continue
+
         elif choice3 == "b":
             lives -= 1
             points -= 50
             print("\nThe door is locked. You bash it down with your shoulders repeatedly, the door gives way and breaks open.")
             print("The momentum of your push carries you passed the doorway and you are now falling down outside the tower - you fall to your death.")
             print("You died.\n")
+
             print("\n-1 life")
             print(f"You have {lives} remaining life")
             print("Try again")
             if lives == 0:
                 game_over()
             continue
+
         elif choice3 == "c":
             points += 100
-            print("\nYou kick the door open. The Princess is sitting terrified on her bed, you tell you have come to rescue her.\n")
+            print(f"\nYou kick the door open. Princess {princess} is sitting terrified on her bed, you tell you have come to rescue her.\n")
             break
         else:
             print("\nInvalid key. Please enter the a valid option to make a choice: ")
@@ -177,7 +204,7 @@ def the_castle():
     print(f"Points: {points}")
     while True:
         print("\nYou start looking for an exit but then you see a window and look into it.")
-        print("Below the window is a great big sleeping dragon on a bed of golden coins in a room full of treasure.")
+        print(f"Below the window is the great big sleeping dragon {dragon} on a bed of golden coins in a room full of treasure.")
         print("Underneath the window there are stairs descending down into the room.\n")
             
         print("\nDo you:\n\na. Go down the stairs to sneak down and take some of the treasure back with you.")
@@ -187,8 +214,9 @@ def the_castle():
             lives -= 1
             points -= 50
             print("\nYou vault over the window onto the stairs and start sneaking down...")
-            print("But the clunking of your armour awakes the dragon and before you know it your are facing a very angry beast.")
-            print("The Dragon opens its mouth surrounding you in flames and you are burnt to a cinder. You die.\n")
+            print(f"But the clunking of your armour awakes {dragon} and before you know it your are facing a very angry beast.")
+            print("The dragon opens its mouth surrounding you in flames and you are burnt to a cinder. You die.\n")
+
             print("\n-1 life")
             print(f"You have {lives} remaining life")
             print("Try again\n\n")
@@ -200,6 +228,7 @@ def the_castle():
             points -= 50
             print("\nYou grab the Princess by the hand and lead her back with you down the stairs, you are suddenly met with an army of Skeleton Soldiers.")
             print("Your futile attempt to fight them does nothing as the horde of Skeletons overwhelm you with their attack. You die.\n")
+
             print("\n-1 life")
             print(f"You have {lives} remaining life")
             print("Try again\n\n")
@@ -209,7 +238,7 @@ def the_castle():
         elif choice4 == "b":
             points += 100
             print("\nYou stand on edge of the window with your sword drawn. You leap into the air with both hands on the hilt of the sword.")
-            print("You PLUNGE the sword right into the Dragon's skull!\nYou keep the sword there, holding tight until the Dragon stops thrashing.")
+            print(f"You PLUNGE the sword right into the Dragon's skull!\nYou keep the sword there, holding tight until the {dragon} stops thrashing.")
             print("You have SLAIN the Dragon!\n")
             break
         else:
@@ -221,21 +250,21 @@ def the_castle():
     while True:
         print("\nYou find yourself in a room full of priceless treasures, with a slain dragon and the rescued Princess.\n")
             
-        print("a. Leave The Castle with Princess.\nb. Leave the Castle with the Princess but also fill bags treasure to take back with you as promised by the King.\n")
+        print(f"a. Leave The Castle with Princess {princess}.\nb. Leave the Castle with Princess {princess} but also fill bags treasure to take back with you as promised by the {king}.\n")
         choice5 = input("\nEnter here: ")
         if choice5 == "a":
             points += 150
-            print("\nYou take the Princess back to the King - the King showers you with grattitude.")
-            print("You become the Hero of the land for saving the Princess and slaying the Dragon to end its terror over the Kingdom.")
-            print("The Princess falls in love with you for saving her and she marries you.")
-            print("Eventually you become the Ruler over the Kingdom after the Kings reign as the new king of the Land that you once saved.")
+            print(f"\nYou take Princess {princess} back to the {king} - the King showers you with grattitude.")
+            print(f"You become the Hero of {kingdom} for saving the Princess and slaying the Dragon to end its terror over the Kingdom.")
+            print(f"The Princess {princess} falls in love with you for saving her and she marries you.")
+            print(f"Eventually you become the Ruler over the {kingdom} after {king}'s reign as the new King of {kingdom} that you once saved.")
             print("They build a statue of you to honour your greatness.\n\nThe End.\n")
             print(f"Your score: {points}")
             game_end()
             break
         elif choice5 == "b":
             points += 50
-            print("\nYou take the Princess back to the King - Your name becomes famous for saving the Princess and slaying the Dragon to end its terror over the Kingdom.")
+            print(f"\nYou take Princess {princess} back to {king} - Your name becomes famous for saving the Princess and slaying the Dragon to end its terror over the Kingdom.")
             print("You become fat and rich, indulging in the finer things for the rest of your life.\n\nThe End.\n")
             print(f"Your score: {points}")
             game_end()
