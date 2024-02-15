@@ -15,7 +15,7 @@ princess = random.choice(princess_names)
 kingdom = random.choice(kingdom_names)
 
 def start_game():
-    print("Welcome to Adventure Line!\n")
+    print("\n\nWelcome to Adventure Line!\n")
     print("Your are in control of what happens in these stories.")
     print("The choices you make will affect the plot......but BEWARE, there are dangers and you must decide which choices to make.")
     print("The wrong decision could end in disaster - or even DEATH.\n")
@@ -37,7 +37,7 @@ def select_story():
     """
     while True:
         print("\nChoose a story to play:\n")
-        story = input("\n1.The Castle\n2.The Plane\n3.The Night-Shift\n\nPlease enter (1, 2 or 3):")
+        story = input("\n1. The Castle\n2. The Plane\n3. The Night-Shift\n\nPlease enter (1, 2 or 3): ")
         if story == "1":
             the_castle()
             break
@@ -56,8 +56,8 @@ def game_over():
     To give option for players to either try again from the start of story or go back to the main menu.
     """
     while True:
-        print("You have run out of lives")
-        retry = input("\nWould you like to retry the story? (y/n): \n\n")
+        print("\n\nYou have run out of lives")
+        retry = input("Would you like to retry the story? (y/n): ")
         if retry == "y":
             the_castle()
         elif retry == "n":
@@ -147,7 +147,7 @@ def the_castle():
     #Scene 2
     print(f"Lives: {lives}")
     print(f"Points: {points}")
-    print("\n\nScence 2")
+    print("\nScence 2")
     while True:
         print("\n\nYou enter the castle and see a set of stairs going up to a tower and another set of stairs going down into a dungeon.\n")
         choice2 = input("\nDo you\n\na. Go up the tower or \nb. Go down into the dungeon\n\nEnter here: ")
@@ -269,7 +269,7 @@ def the_castle():
         if choice5 == "a":
             points += 150
             print(f"\nYou take Princess {princess} back to the {king} - the King showers you with grattitude.")
-            print(f"You become the Hero of {kingdom} for saving the Princess and slaying the Dragon to end its terror over the Kingdom.")
+            print(f"You become the Hero of {kingdom} for saving the Princess and slaying the dragon, {dragon}, to end its terror over the kingdom.")
             print(f"Princess {princess} falls in love with you for saving her and she marries you.")
             print(f"Eventually you become the ruler over {kingdom} after {king}'s reign ends as the new King of {kingdom} that you once saved.")
             print("They build a statue of you in honour of your greatness.\n\nThe End.\n\n")
@@ -278,7 +278,7 @@ def the_castle():
             break
         elif choice5 == "b":
             points += 50
-            print(f"\nYou take Princess {princess} back to {king} - Your name becomes famous for saving the Princess and slaying the Dragon to end its terror over the Kingdom.")
+            print(f"\nYou take Princess {princess} back to {king} - Your name becomes famous for saving the Princess and slaying the dragon, {dragon}, to end its terror over the kingdom.")
             print("You become fat and rich, indulging in the finer things for the rest of your life.\n\nThe End.\n")
             print(f"Your score: {points}")
             game_end()
