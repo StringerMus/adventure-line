@@ -44,7 +44,7 @@ def select_story():
 def game_over():
     """
     This function will appear whenever a players lives reaches 0
-    To give opportunity for player to try again and allow them to go back to the main menu.
+    To give option for players to either try again from the start of story or go back to the main menu.
     """
     while True:
         retry = input("\nWould you like to retry? (y/n): ")
@@ -90,9 +90,10 @@ def the_castle():
 
     #Game starts here
     while True:
-        print(f"Lives: {lives}")
-        print(f"Points: {points}")
-        #Situation 1
+        print(f"You have {lives} lives. If you fail twice, the game will be over\n")
+        print("You will accumilate points depending on the decisions you make")
+        print("but will lose points if you make the incorrect decision.")
+        #Scene 1
         print("\nYou arrive at the Dragon’s Lair in a shining metal armour, with a sword and shield in your hands.")
         print("The lair is a big castle inside a mountain, you see the entrance guarded by 2 skeletons with swords.\n")
         choice1 = input("\nDo you\n\na.Charge and fight the skeletons or\nb.Run away\n\nEnter here: ")
@@ -113,7 +114,7 @@ def the_castle():
         else:
             print("\nInvalid key. Please enter the a valid option to make a choice: \n")
 
-    #Situation 2
+    #Scene 2
     print(f"Lives: {lives}")
     print(f"Points: {points}")
     while True:
@@ -137,7 +138,7 @@ def the_castle():
         else:
             print("\nInvalid key. Please enter the a valid option to make a choice: ")
     
-    #Situation 3
+    #Scene 3
     print(f"Lives: {lives}")
     print(f"Points: {points}")
     while True:
@@ -171,7 +172,7 @@ def the_castle():
         else:
             print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
-    #Situation 4
+    #Scene 4
     print(f"Lives: {lives}")
     print(f"Points: {points}")
     while True:
@@ -214,7 +215,7 @@ def the_castle():
         else:
             print("\nInvalid key. Please enter the a valid option to make a choice: ")
 
-    #Situation 5
+    #Scene 5
     print(f"Lives: {lives}")
     print(f"Points: {points}")
     while True:
@@ -229,7 +230,6 @@ def the_castle():
             print("The Princess falls in love with you for saving her and she marries you.")
             print("Eventually you become the Ruler over the Kingdom after the Kings reign as the new king of the Land that you once saved.")
             print("They build a statue of you to honour your greatness.\n\nThe End.\n")
-            #score - change to just points
             print(f"Your score: {points}")
             game_end()
             break
@@ -237,7 +237,6 @@ def the_castle():
             points += 50
             print("\nYou take the Princess back to the King - Your name becomes famous for saving the Princess and slaying the Dragon to end its terror over the Kingdom.")
             print("You become fat and rich, indulging in the finer things for the rest of your life.\n\nThe End.\n")
-            #score - change to just points
             print(f"Your score: {points}")
             game_end()
             break
