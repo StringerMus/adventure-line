@@ -9,7 +9,17 @@ The target audience for Adventure Line would be young children - teens due to ty
 
 # Logic Map
 
+![flowchart](media/al_flowchart.jpg)
+
 ## How to play
+
+This is a text based app game on a console that requires user input on prompts from the game to progress through the story to the ending.
+
+The player has three lives, if a user makes the incorrect decision they get an opporunity select a different answer on the same scene but if they select 3 incorrect decisions throughout the game, the game is over and the user user is given the option of either going back to the main menu or playing the same story again.
+
+There are points to be gained throughout the gameplay, players gain points on correct decision and loses points on incorrect decisions - players should aim to get the highest score by the end of the story.
+
+Decision from players are made at the end of scenes where options are provided to the player on what they need want to do next where things will happen - either the user selects the correct decision and progresses to the next scene or if the user chooses the incorrect decision they lose a life, the continues until the ending is reached.
 
 # Features
 
