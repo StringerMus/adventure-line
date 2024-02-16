@@ -1,15 +1,11 @@
 # Adventure Line
 Adventure Line is an interacive program that has been inspired by the Choose Your Own Adventure series to encourage children reading by placing them them in the role of the main character and giving the player the power to influence the line of story and the outcome based on their decisions as the game requires the user's input to progress through a story. This objective fits really well with this type of game as it's an interactive text based program.
 
-The target audience for Adventure Line would be young children - teens due to type of stories that would be available to play and the type of game that is likley to engage this age group. This audience will fit the demographic to target for the objective of using an interacive text based app to get them interested in reading.
+The target audience for Adventure Line would be young children to teens due to type of stories that would be available to play and the type of game that is likley to engage this age group. This audience will fit the demographic that would be interested in a game like this where the objective of using an interacive text based app to get them interested in reading stories.
 
 [Visit app here](https://adventure-line-e6e050da4a13.herokuapp.com/)
 
-![responsive](media/responsive.png) - needed?
-
-# Logic Map
-
-![flowchart](media/al_flowchart.jpg)
+![Intro-screen](media/responsive.png) - ADD SCREENSHOT HERE!!!!!
 
 ## How to play
 
@@ -21,13 +17,35 @@ There are points to be gained throughout the gameplay, players gain points on co
 
 Decision from players are made at the end of scenes where options are provided to the player on what they need want to do next where things will happen - either the user selects the correct decision and progresses to the next scene or if the user chooses the incorrect decision they lose a life, the continues until the ending is reached.
 
-# Features
+# Development
 
-## Dependencies - random
+The idea was to get the Choose Your Adventure theme into a text based game format. The main thing we needed was the stories and to build everything around decision element. To make the game fun, add a little bit of challenge and re-playability the elements of points and lives were added to keep the game interesting.
+
+I had first written a story, and cut the story into introduction, scenes and an ending - the scenes are where the different decisions had to be created for the user to select to go through the story.
+
+## Logic Map
+
+![flowchart](media/al_flowchart.jpg)
+
+The logic map shows how the game functions following user inputs and how the game is affected by incorrect decisions and 0 lives.
+
+## Surface
+As this is a text based game, it does not really have a front-end and the game is played on a console.
+
+# Features - include screenshots of different functions
+
+
+##  - random - say why this has been added
+
 
 ## Future to implement
+Add colour
+More stories
+More variables that affect story-line and outcome.
 
-# Testing
+# Testing - screenshots
+
+# Technologies Used
 
 # Bugs/Fixes
 
@@ -36,5 +54,4 @@ Decision from players are made at the end of scenes where options are provided t
 
 # Deployment
 
-
-
+# Credit

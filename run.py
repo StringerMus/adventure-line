@@ -86,8 +86,6 @@ def game_end():
 
 
 def the_castle():
-    castle_select = "\nYou have selected 'The Castle'"
-    print(castle_select)
     """
     Each story game will start by setting the story
     followed by a scene where the user needs to make a choice
@@ -97,6 +95,9 @@ def the_castle():
     If the incorrect decision is made, the player will lose a life
     and points. If the player reaches "0" lives, the game will end.
     """
+    castle_select = "\nYou have selected 'The Castle'"
+    print(castle_select)
+
     # Keeps record users lives and points
     lives = 3
     points = 0
