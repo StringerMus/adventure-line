@@ -1,10 +1,6 @@
 import random
 
-lives = 2
-points = 0
-
 # Randomise names in the story each time it's played
-
 dragon_names = ["Baal", "Samael", "Falkor"]
 king_names = ["King Oswald", "King Offa", "King Darius"]
 princess_names = ["Hera", "Medea", "Lucilla"]
@@ -123,7 +119,7 @@ def the_castle():
         else:
             print("\nInvalid key. Please enter (y) to continue: \n")
 
-    # Slow down the amount of information the user is receving on screen
+    # Explain lives and points
     while True:
         print(f"\nYou have {lives} lives. If you fail twice, the game")
         print("will be over.")
