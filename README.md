@@ -34,23 +34,44 @@ As this is a text based game, it does not really have a front-end and the game i
 
 # Features - include screenshots of different functions
 
+## Random Variables - say why this has been added
+This feature has been added as bit to make the game more fun for users whenever they play when the names of the Princess, King, the dragon and the kingdom changes each time the game is played. It adds a bit of dynamism to the story to have different characters appear each time they play
+In future it would be great to add when different characters appear they would bring a class of their own characteristics that affect the narrative of the story.
 
-##  - random - say why this has been added
+![random_variables]()
+
+## Start Game
+This is essentially the game's main menu - it introduces the player to the game, explaining what the game is about and how it is played.
+It prompts the user to start the game to continue to the Select Story section.
+
+![start_game]()
+
+## Select Story
 
 
-## Future to implement
+![select_story]()
+
+## Game Over
+
+## Game End
+
+## Game-Start
+
+### Lives & Points
+
+## Features to implement
 Add colour
 More stories
 More variables that affect story-line and outcome.
 
 # Testing - screenshots
 
-# Technologies Used
-
 # Bugs/Fixes
 
 # Validator Testing
 ## Pep8
+
+# Technologies Used
 
 # Deployment
 
