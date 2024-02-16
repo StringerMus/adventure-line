@@ -1,32 +1,30 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Adventure Line
+Adventure Line is an interacive program that has been inspired by the Choose Your Own Adventure series to encourage children reading by placing them them in the role of the main character and giving the player the power to influence the line of story and the outcome based on their decisions as the game requires the user's input to progress through a story. This objective fits really well with this type of game as it's an interactive text based program.
 
-Welcome,
+The target audience for Adventure Line would be young children - teens due to type of stories that would be available to play and the type of game that is likley to engage this age group. This audience will fit the demographic to target for the objective of using an interacive text based app to get them interested in reading.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+[Visit app here](https://adventure-line-e6e050da4a13.herokuapp.com/)
 
-## Reminders
+![responsive](media/responsive.png) - needed?
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+# Logic Map
 
-## Creating the Heroku app
+## How to play
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+# Features
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Dependencies - random
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## Future to implement
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+# Testing
 
-Connect your GitHub repository and deploy as normal.
+# Bugs/Fixes
 
-## Constraints
+# Validator Testing
+## Pep8
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+# Deployment
 
----
 
-Happy coding!
+

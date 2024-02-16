@@ -98,11 +98,11 @@ def the_castle():
     and points. If the player reaches "0" lives, the game will end.
     """
     # Keeps record users lives and points
-    lives = 2
+    lives = 3
     points = 0
 
-    print("The story:")
-    print(f"\nIn the Kingdom of {kingdom}, Princess {princess} has been")
+    print("\nThe story:")
+    print(f"In the Kingdom of {kingdom}, Princess {princess} has been")
     print(f"stolen away by a fire breathing dragon called {dragon}, taking")
     print(f"her back to its lair as punishment to {king} for not paying")
     print(f"his yearly tribute. {king} has promised all the treasure")
@@ -121,7 +121,7 @@ def the_castle():
 
     # Explain lives and points
     while True:
-        print(f"\nYou have {lives} lives. If you fail twice, the game")
+        print(f"\nYou have {lives} lives. If you fail three times, the game")
         print("will be over.")
         print("You will accumulate points depending on the decisions you make")
         print("but will lose points if you make the incorrect decision.")
