@@ -5,7 +5,7 @@ The target audience for Adventure Line would be young children to teens due to t
 
 [Visit app here](https://adventure-line-e6e050da4a13.herokuapp.com/)
 
-![Intro-screen](media/responsive.png) - ADD SCREENSHOT HERE!!!!!
+![Intro-screen](media/intro.png)
 
 
 ### What the user wants
@@ -49,22 +49,22 @@ As this is a text based game, it does not really have a front-end and the game i
 This feature has been added as bit to make the game more fun for users whenever they play when the names of the Princess, King, the dragon and the kingdom changes each time the game is played. It adds a bit of dynamism to the story to have different characters appear each time they play
 In future it would be great to add when different characters appear they would bring a class of their own characteristics that affect the narrative of the story.
 
-![random_variables](media/random_names.png)
+![random_variables](media/features/random_names.png)
 
-![random_names](media/random_placeholder.png)
+![random_names](media/features/random_placeholder.png)
 
 
 ## Invalid Key
 In every function else statements have been included to ensure users are inputting the correct keys within the game by notifying them an incorrect key has been input and provide them the key/s they need to input to continue.
 
-![invalid_key](media/invalid_key.png)
+![invalid_key](media/features/invalid_key.png)
 
 
 ## Start Game
 This is essentially the game's main menu - it introduces the player to the game, explaining what the game is about and how it is played.
 It prompts the user to start the game to continue to the Select Story section.
 
-![start_game](media/start_game.png)
+![start_game](media/features/start_game.png)
 
 
 ## Select Story
@@ -72,31 +72,31 @@ The Select Story function is where a player would have options of the stories av
 
 The function prompts the user to press a number to select a story.
 
-![select_story](media/select_story.png)
+![select_story](media/features/select_story.png)
 
 
 ## Game Over
 This function will only appear in the game when a play runs out of lives during gameplay, it will give the player the option to either play the story again from the beginning or back to the main menu.
 
-![game_over](media/game_over.png)
+![game_over](media/features/game_over.png)
 
 
 ## Game End
 At the end of the game, the game_end function will appear that congratualtes the player for reaching the ending and to provide the option to either play through the story again or go back to the main menu.
 
-![game_end](media/game_end.png)
+![game_end](media/features/game_end.png)
 
 
 ## The Castle
 Once the player selects the story the_castle function will start. The function begins providing the setting of the story to the user and introducing the characters involved. 
 
-![the_castle](media/the_castle.png)
+![the_castle](media/features/the_castle.png)
 
 
 ### Lives & Points
 It this section explains to the users how lives and points work in the game, why they are important and how it affects the player.
 
-![lives&points](media/lives_points.png)
+![lives&points](media/features/lives_and_points.png)
 
 
 ### Scenes
@@ -104,12 +104,12 @@ Stories will be cut up into scenes during game-play after the story is introduce
 
 Depending on the players choice they could lose a life, points or not gain as much points from the other options.
 
-![scenes](media/the_game.png)
+![scenes](media/features/the_game.png)
 
 
 The last scene will provide the player with an ending to the story and the game_end function will appear for the player to be able to navigate back to the main menu or play the story again.
 
-![ending](media/ending.png)
+![ending](media/features/ending.png)
 
 
 ## Features to implement
@@ -127,7 +127,47 @@ A vast amount of variables can be added to the story and future stories that aff
 
 
 # Testing - screenshots
+## Main Menu
 
+When I load up the game I am met with an introduction that explains to me what the game is about. There is a prompt for me press 'y' to start the game.
+
+![picture_here]
+
+
+## Select Story
+When I enter 'y', the game asks me to select a story. Since there is only 1 story available in the game, the prompt is to enter '1' to select The Castle.
+
+![picture_here]
+
+
+## The Castle
+
+### Lives and Points
+When I enter 'y' the game explains to me that I have 3 lives during game-play and will gain points depending on the decisions I make and will lose points for incorrect decisions.
+
+![picture_here]
+
+
+### Scenes
+When I continue with the input 'y' I am presented with scene 1 of the story. I am given 2 options to take - a or b.
+If I enter 'b' I fail the mission for running away and 1 life is taken away from me, the game then lets me try the scene again.
+
+When I enter 'a' I am taken to the next scene and gain points.
+
+
+## Zero Lives
+
+
+
+## Invalid Key
+If I enter any key other 'y' I receive an invalid key message.
+
+
+## Random names
+Kingdom - Adina
+Princess - Lucilla
+Dragon Falkor
+King - Oswald
 
 # Bugs/Fixes
 

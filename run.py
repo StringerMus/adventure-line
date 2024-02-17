@@ -74,8 +74,9 @@ def game_end():
     while True:
         print("\nCongratulations! You made it to the end of the story!")
         print("We hope you are happy with the ending you have chosen.\n")
-        print("\nWould you like to play again or go back to the main menu?")
-        end = input("(y/n)\n\nEnter here: ")
+        print("\nWould you like to play again (y) or")
+        print("go back to the main menu (n)?")
+        end = input("(y/n) Enter here: ")
         if end == "y":
             the_castle()
         elif end == "n":
@@ -136,7 +137,7 @@ def the_castle():
     # Game starts here
     while True:
         # Scene 1
-        print("\nScene 1\n")
+        print("\n\nScene 1")
         print("\nYou arrive at the dragon’s lair in a shining metal armour,")
         print("with a sword and shield in your hands.")
         print("The lair is a big castle inside a mountain, you see the")
@@ -209,7 +210,7 @@ def the_castle():
         if choice3 == "a":
             lives -= 1
             points -= 50
-            print("\nYou open the door...and walk in falling into a pit of")
+            print("\nYou open the door...and walk, in falling into a pit of")
             print("lava.\nYou die.\n")
 
             print("-1 life")
@@ -247,7 +248,7 @@ def the_castle():
             print("Please enter a valid option to make a choice: \n")
 
     # Scene 4
-    print("\n\nScene 4")
+    print("\nScene 4\n")
     print(f"Lives: {lives}")
     print(f"Points: {points}")
     while True:
@@ -289,7 +290,7 @@ def the_castle():
             print("attack. You die.\n")
 
             print("\n-1 life")
-            print(f"You have {livess} remaining life")
+            print(f"You have {lives} remaining life")
             print("Try again\n\n")
             if lives == 0:
                 game_over()
@@ -309,7 +310,7 @@ def the_castle():
             print("Please enter a valid option to make a choice: \n")
 
     # Scene 5
-    print("\n\nScene 5")
+    print("\nScene 5\n")
     print(f"Lives: {lives}")
     print(f"Points: {points}")
     while True:
@@ -319,8 +320,8 @@ def the_castle():
         print(f"a. Hurry, leave The Castle with Princess {princess}.")
         print(f"b. Leave the Castle with Princess {princess}")
         print("but fill bags of treasure to take back")
-        print("with you as promised by {king}.\n")
-        choice5 = input("\nEnter here: ")
+        print(f"with you as promised by {king}.\n")
+        choice5 = input("\nEnter here (a/b): ")
         if choice5 == "a":
             points += 150
             print(f"\nYou take Princess {princess} back to {king} -")
@@ -330,7 +331,8 @@ def the_castle():
             print(f"the kingdom. Princess {princess} falls in love with you")
             print("for saving her and she marries you. Eventually you become")
             print(f"the ruler over {kingdom} after {king}'s reign")
-            print(f"ends as the new King of {kingdom} that you once saved.")
+            print(f"ends as the new King of {kingdom}, the kingdom that you")
+            print("once saved.")
             print("They build a statue of you in honour of your greatness.\n")
             print("The End.\n\n")
             print(f"Your final score: {points}\n")
