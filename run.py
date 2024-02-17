@@ -27,7 +27,7 @@ def start_game():
         if start == "y":
             select_story()
         else:
-            print("\nInvalid key. Please enter the (y) to start game")
+            print("\nInvalid key. Please enter (y) to start game")
 
 
 def select_story():
@@ -75,7 +75,7 @@ def game_end():
         print("\nCongratulations! You made it to the end of the story!")
         print("We hope you are happy with the ending you have chosen.\n")
         print("\nWould you like to play again (y) or")
-        print("go back to the main menu (n)?")
+        print("go back to the main menu (n)?\n")
         end = input("(y/n) Enter here: ")
         if end == "y":
             the_castle()
@@ -166,11 +166,11 @@ def the_castle():
             print("Please enter a valid option to make a choice: \n")
 
     # Scene 2
-    print(f"Lives: {lives}")
+    print(f"\n\nLives: {lives}")
     print(f"Points: {points}")
-    print("\nScence 2\n")
+    print("\nScene 2\n")
     while True:
-        print("\nYou enter the castle and see a set of stairs going up to a")
+        print("You enter the castle and see a set of stairs going up to a")
         print("tower and another set of stairs going down into a dungeon.\n")
         print("Do you\n\na. Go up the tower or")
         print("b. Go down into the dungeon\n")
@@ -190,7 +190,7 @@ def the_castle():
                 game_over()
             continue
         elif choice2 == "a":
-            print("\nYou go up the winding stairs of the tower and found")
+            print("\nYou go up the winding stairs of the tower and find")
             print("yourself in front 3 closed doors.\n")
             points += 100
             break
@@ -199,12 +199,12 @@ def the_castle():
             print("Please enter a valid option to make a choice: \n")
 
     # Scene 3
-    print(f"Lives: {lives}")
+    print(f"\n\nLives: {lives}")
     print(f"Points: {points}")
-    print("\n\nScene 3")
+    print("\nScene 3\n")
     while True:
-        print("\nYou need to decide which door to go through.\n")
-        print("Do you go through: a. The first door\n")
+        print("You need to decide which door to go through.\n")
+        print("\na. The first door")
         print("b. The middle door\nc. The last door\n")
         choice3 = input("\nEnter here: ")
         if choice3 == "a":
@@ -248,11 +248,11 @@ def the_castle():
             print("Please enter a valid option to make a choice: \n")
 
     # Scene 4
-    print("\nScene 4\n")
-    print(f"Lives: {lives}")
+    print(f"\n\nLives: {lives}")
     print(f"Points: {points}")
+    print("\nScene 4\n")
     while True:
-        print("\nYou start looking for an exit but then you see a window and")
+        print("You start looking for an exit but then you see a window and")
         print("look into it.")
         print(f"Below the window is the great big sleeping dragon, {dragon},")
         print("on a bed of golden coins in a room full of treasure.")
@@ -260,8 +260,8 @@ def the_castle():
         print("the room.\n")
 
         print("\nDo you:\n\na. Sneak down the stairs and take some of the")
-        print("treasure back with you.")
-        print("b. Take your sword out and to slay the dragon while it sleeps.")
+        print("treasure back with you.\n")
+        print("b. Take your sword out and to slay the dragon while it sleeps.\n")
         print("c. Go back the way you came.\n")
         choice4 = input("\nEnter here: ")
         if choice4 == "a":
@@ -310,18 +310,18 @@ def the_castle():
             print("Please enter a valid option to make a choice: \n")
 
     # Scene 5
-    print("\nScene 5\n")
-    print(f"Lives: {lives}")
+    print(f"\n\nLives: {lives}")
     print(f"Points: {points}")
+    print("\nScene 5\n")
     while True:
-        print("\nYou now find yourself in a room full of priceless treasures,")
+        print("You now find yourself in a room full of priceless treasures,")
         print("with a slain dragon and the rescued Princess.\n")
 
-        print(f"a. Hurry, leave The Castle with Princess {princess}.")
+        print(f"a. Hurry, leave The Castle with Princess {princess}.\n")
         print(f"b. Leave the Castle with Princess {princess}")
         print("but fill bags of treasure to take back")
         print(f"with you as promised by {king}.\n")
-        choice5 = input("\nEnter here (a/b): ")
+        choice5 = input("\nEnter here: ")
         if choice5 == "a":
             points += 150
             print(f"\nYou take Princess {princess} back to {king} -")

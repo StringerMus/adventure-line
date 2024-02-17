@@ -152,11 +152,11 @@ When I enter 'y' the game explains to me that I have 3 lives during game-play an
 When I continue with the input 'y' I am presented with scene 1 of the story. I am given 2 options to take - a or b.
 If I enter 'b' I fail the mission for running away and 1 life is taken away from me, the game then lets me try the scene again.
 
-When I enter 'a' I am taken to the next scene and gain points.
+When I enter 'a' I am taken to the next scene and gain points. I ran through all of the scenes, testing all of the options, there were some bugs and typo's which have been listed in the Bugs/Fixes section below.
 
 
 ## Zero Lives
-
+I have tested the losing all my lives in every scene, each time I did the game_over function will appear giving me the option to either start the story again or go back to the main menu.
 
 
 ## Invalid Key
@@ -170,6 +170,32 @@ Dragon Falkor
 King - Oswald
 
 # Bugs/Fixes
+start game
+- invalid message 
+    - Please enter the (y)
+
+
+Scence 2 - scene 2
+
+
+
+You go up the winding stairs of the tower and found….
+
+
+
+scene 3
+Do you go through: a. The first door
+
+b. The middle door
+c. The last door
+
+
+scene4
+typo {livess} - change to {lives}
+- error message comes up
+
+scene 5
+{king} instead of a name from the list.
 
 # Validator Testing
 ## Pep8
