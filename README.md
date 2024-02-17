@@ -154,48 +154,33 @@ If I enter 'b' I fail the mission for running away and 1 life is taken away from
 
 When I enter 'a' I am taken to the next scene and gain points. I ran through all of the scenes, testing all of the options, there were some bugs and typo's which have been listed in the Bugs/Fixes section below.
 
+![picture_here]
+
 
 ## Zero Lives
 I have tested the losing all my lives in every scene, each time I did the game_over function will appear giving me the option to either start the story again or go back to the main menu.
 
+![picture_here]
+
 
 ## Invalid Key
-If I enter any key other 'y' I receive an invalid key message.
+On every prompt I tried inputting incorrect keys and received the invalid key message and will not change until the valid key in entered.
+
+![picture_here]
 
 
 ## Random names
-Kingdom - Adina
-Princess - Lucilla
-Dragon Falkor
-King - Oswald
+With the names being randomised in the list for the kingdom, princess, dragon and the king are consistent throughout a session of the game and will not change until the game is refreshed as intended.
+
 
 # Bugs/Fixes
-start game
-- invalid message 
-    - Please enter the (y)
+There were a couple bugs I found during testing which have now been fixed -
 
+scene4 - typo in {livess} causes error message comes up.
+scene 5 - {king} appears in the game instead of a name from the list.
 
-Scence 2 - scene 2
+And there were some typo's in spelling and spacing which have been edited.
 
-
-
-You go up the winding stairs of the tower and found….
-
-
-
-scene 3
-Do you go through: a. The first door
-
-b. The middle door
-c. The last door
-
-
-scene4
-typo {livess} - change to {lives}
-- error message comes up
-
-scene 5
-{king} instead of a name from the list.
 
 # Validator Testing
 ## Pep8
