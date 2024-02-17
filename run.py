@@ -13,15 +13,15 @@ kingdom = random.choice(kingdom_names)
 
 
 def start_game():
+     """
+    Get command from user to start game from user.
+    to start the game and move to select the story they want to play.
+    """
     print("\n\nWelcome to Adventure Line!\n")
     print("Your are in control of what happens in these stories.")
     print("The choices you make will affect the plot......but BEWARE,")
     print("there are dangers and you must decide which choices to make.")
     print("The wrong decision could end in disaster - or even DEATH.\n")
-    """
-    Get command from user to start game from user.
-    to start the game and move to select the story they want to play.
-    """
     while True:
         start = input("Start Game? (y): ")
         if start == "y":

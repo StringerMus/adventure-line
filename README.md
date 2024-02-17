@@ -32,32 +32,61 @@ The logic map shows how the game functions following user inputs and how the gam
 ## Surface
 As this is a text based game, it does not really have a front-end and the game is played on a console.
 
-# Features - include screenshots of different functions
+# Features
 
-## Random Variables - say why this has been added
+## Random Variables
 This feature has been added as bit to make the game more fun for users whenever they play when the names of the Princess, King, the dragon and the kingdom changes each time the game is played. It adds a bit of dynamism to the story to have different characters appear each time they play
 In future it would be great to add when different characters appear they would bring a class of their own characteristics that affect the narrative of the story.
 
-![random_variables]()
+![random_variables](media/random_names.png)
+
+![random_names](media/random_placeholder.png)
+
+# Invalid Key
 
 ## Start Game
 This is essentially the game's main menu - it introduces the player to the game, explaining what the game is about and how it is played.
 It prompts the user to start the game to continue to the Select Story section.
 
-![start_game]()
+![start_game](media/start_game.png)
 
 ## Select Story
+The Select Story function is where a player would have options of the stories available to play, at the moment there is only one story available but there would be a selection a choose from here.
 
+The function prompts the user to press a number to select a story.
 
-![select_story]()
+![select_story](media/select_story.png)
 
 ## Game Over
+This function will only appear in the game when a play runs out of lives during gameplay, it will give the player the option to either play the story again from the beginning or back to the main menu.
+
+![game_over](media/game_over.png)
 
 ## Game End
+At the end of the game, the game_end function will appear that congratualtes the player for reaching the ending and to provide the option to either play through the story again or go back to the main menu.
 
-## Game-Start
+![game_end](media/game_end.png)
+
+## The Castle
+Once the player selects the story the_castle function will start. The function begins providing the setting of the story to the user and introducing the characters involved. 
+
+![the_castle](media/the_castle.png)
 
 ### Lives & Points
+It this section explains to the users how lives and points work in the game, why they are important and how it affects the player.
+
+![lives&points](media/lives_points.png)
+
+### Scenes
+Stories will be cut up into scenes during game-play after the story is introduced to players. At the end of each scene players will be provided with options for them to take which could lead either lead them to the next scene, death or failure.
+
+Depending on the players choice they could lose a life, points or not gain as much points from the other options.
+
+![scenes](media/the_game.png)
+
+The last scene will provide the player with an ending to the story and the game_end function will appear for the player to be able to navigate back to the main menu or play the story again.
+
+![ending](media/ending.png)
 
 ## Features to implement
 Add colour
