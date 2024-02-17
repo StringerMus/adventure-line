@@ -13,7 +13,7 @@ kingdom = random.choice(kingdom_names)
 
 
 def start_game():
-     """
+    """
     Get command from user to start game from user.
     to start the game and move to select the story they want to play.
     """
