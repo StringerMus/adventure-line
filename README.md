@@ -372,6 +372,8 @@ GitHub - https://github.com/
 
 Heroku - https://dashboard.heroku.com/apps
 
+Grammarly
+
 
 ## Thanks
 I would like to thank my mentor Harry Dhillon for very good advice and for steering me in the right direction for this project which solved a lot of my problems. I would also like to thank the Slack community for all the useful information and advice that is available there.

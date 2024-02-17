@@ -49,7 +49,7 @@ def select_story():
 
 def game_over():
     """
-    This function will appear whenever a players Lives reaches "0".
+    This function will appear whenever a player's life reaches "0".
     This will give option for players to either try again from the
     start of story or go back to the main menu.
     """
@@ -113,7 +113,7 @@ def the_castle():
     print("You have decided to embark on this daring")
     print(f"quest to rescue the Princess {princess} and gain riches.\n")
 
-    # Slow down the amount of information the user is receving on screen
+    # Slow down the amount of information the user is receiving on screen
     while True:
         lives_points = input("\nContinue? (y): ")
         if lives_points == "y":
