@@ -126,26 +126,24 @@ More stories definitely needs to be added to provide players with a variety whic
 A vast amount of variables can be added to the story and future stories that affect the story-line and outcome. This will make the game more enjoyable and encourage re-playability.
 
 
-# Testing - screenshots
-## Main Menu
+# Testing
+### Main Menu
 
 When I load up the game I am met with an introduction that explains to me what the game is about. There is a prompt for me press 'y' to start the game.
 
-![picture_here]
+![intro](media/testing/intro.png)
 
 
-## Select Story
+### Select Story
 When I enter 'y', the game asks me to select a story. Since there is only 1 story available in the game, the prompt is to enter '1' to select The Castle.
 
-![picture_here]
+![select_story](media/testing/select_story.png)
 
-
-## The Castle
 
 ### Lives and Points
 When I enter 'y' the game explains to me that I have 3 lives during game-play and will gain points depending on the decisions I make and will lose points for incorrect decisions.
 
-![picture_here]
+![lives_and_points](media/testing/lives_and_points.png)
 
 
 ### Scenes
@@ -154,36 +152,48 @@ If I enter 'b' I fail the mission for running away and 1 life is taken away from
 
 When I enter 'a' I am taken to the next scene and gain points. I ran through all of the scenes, testing all of the options, there were some bugs and typo's which have been listed in the Bugs/Fixes section below.
 
-![picture_here]
+![gameplay](media/testing/the_castle.png)
 
 
-## Zero Lives
+### Game Over
 I have tested the losing all my lives in every scene, each time I did the game_over function will appear giving me the option to either start the story again or go back to the main menu.
 
-![picture_here]
+![game_over](media/testing/game_over.png)
 
 
-## Invalid Key
+### Invalid Key
 On every prompt I tried inputting incorrect keys and received the invalid key message and will not change until the valid key in entered.
 
-![picture_here]
+![invalid_key](media/testing/invalid_key.png)
 
 
-## Random names
+### Random names
 With the names being randomised in the list for the kingdom, princess, dragon and the king are consistent throughout a session of the game and will not change until the game is refreshed as intended.
 
+![intro_names](media/testing/intro_names.png)
 
-# Bugs/Fixes
+![ending_names](media/testing/ending_names.png)
+
+
+## Bugs/Fixes
 There were a couple bugs I found during testing which have now been fixed -
 
-scene4 - typo in {livess} causes error message comes up.
+scene4 - typo in {livess} causes error message comes up.<br>
 scene 5 - {king} appears in the game instead of a name from the list.
 
 And there were some typo's in spelling and spacing which have been edited.
 
 
-# Validator Testing
-## Pep8
+## Validator Testing
+### Pep8
+Pep8 has been used to check the code and a lot of errors were found, mainly due to the length of strings.
+
+![pep8](media/validator/pep8_validator.png)
+
+
+After making the amendments there are no errors or warnings.
+
+![no_errors](media/validator/pep8_no_errors.png)
 
 # Technologies Used
 

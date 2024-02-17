@@ -261,7 +261,8 @@ def the_castle():
 
         print("\nDo you:\n\na. Sneak down the stairs and take some of the")
         print("treasure back with you.\n")
-        print("b. Take your sword out and to slay the dragon while it sleeps.\n")
+        print("b. Take your sword out and to slay the dragon while")
+        print("it sleeps.\n")
         print("c. Go back the way you came.\n")
         choice4 = input("\nEnter here: ")
         if choice4 == "a":
